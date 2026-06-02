@@ -16,6 +16,17 @@ Loja do Zeca é uma aplicação web construída em Laravel 12 que oferece:
 - Aviso visual em amarelo quando o estoque está exatamente no mínimo
 - Exibição de materiais em cards com todos os campos importantes
 - Exibição de "Não se aplica" quando a validade estiver em branco
+- Associação de materiais a categorias para organizar a aplicação de cada tipo de produto
+
+## Uso de categorias
+
+As categorias permitem agrupar os materiais por tipo de utilização. No sistema, você pode:
+
+- Criar categorias como "Pintura", "Hidráulica", "Elétrica" ou "Acabamento".
+- Associar cada material a uma categoria ao cadastrar ou editar o produto.
+- Visualizar a categoria do material diretamente na lista de cards.
+
+Isso facilita a aplicação de cada categoria dentro da loja e ajuda a localizar materiais por segmento.
 
 ## Versões utilizadas
 

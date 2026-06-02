@@ -16,6 +16,7 @@
                             <tr class="bg-gray-100">
                                 <th class="border border-gray-300 px-6 py-3 text-left font-semibold">ID</th>
                                 <th class="border border-gray-300 px-6 py-3 text-left font-semibold">Nome</th>
+                                <th class="border border-gray-300 px-6 py-3 text-left font-semibold">Aplicação</th>
                                 <th class="border border-gray-300 px-6 py-3 text-left font-semibold">Ações</th>
                             </tr>
                         </thead>
@@ -24,6 +25,7 @@
                                 <tr class="hover:bg-gray-50">
                                     <td class="border border-gray-300 px-6 py-3">{{ $categoria->id }}</td>
                                     <td class="border border-gray-300 px-6 py-3">{{ $categoria->nome }}</td>
+                                    <td class="border border-gray-300 px-6 py-3">{{ $categoria->aplicacao ?? '-' }}</td>
                                     <td class="border border-gray-300 px-6 py-3">
                                         <div class="flex flex-wrap gap-2 items-center whitespace-nowrap">
                                             <a href="{{ route('categorias.edit', $categoria) }}" class="inline-flex items-center px-3 py-1 rounded bg-blue-600 text-white font-semibold hover:bg-blue-700 min-w-[70px] justify-center">Editar</a>

@@ -29,10 +29,12 @@ class CategoriasController extends Controller
     {
         $request->validate([
             'nome' => 'required|string|max:255',
+            'aplicacao' => 'required|string|in:Fundação,Acabamento,Estrutura',
         ]);
 
         $categoria->update([
             'nome' => $request->input('nome'),
+            'aplicacao' => $request->input('aplicacao'),
         ]);
 
         return redirect()->route('categorias.index');
@@ -47,10 +49,12 @@ class CategoriasController extends Controller
     {
         $request->validate([
             'nome' => 'required|string|max:255',
+            'aplicacao' => 'required|string|in:Fundação,Acabamento,Estrutura',
         ]);
 
         Categoria::create([
             'nome' => $request->input('nome'),
+            'aplicacao' => $request->input('aplicacao'),
         ]);
 
         return redirect()->route('categorias.index');

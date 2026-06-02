@@ -25,8 +25,18 @@
                         @csrf
 
                         <div class="mb-4">
-                            <label for="nome" class="block text-gray-700 text-sm font-bold mb-2">Nome:</label>
+                            <label for="nome" class="block text-gray-700 text-sm font-bold mb-2">Nome da categoria:</label>
                             <input type="text" name="nome" id="nome" value="{{ old('nome') }}" class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm w-full px-3 py-2">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="aplicacao" class="block text-gray-700 text-sm font-bold mb-2">Aplicação da categoria:</label>
+                            <select name="aplicacao" id="aplicacao" class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm w-full px-3 py-2">
+                                <option value="">-- Selecione --</option>
+                                <option value="Fundação" {{ old('aplicacao') == 'Fundação' ? 'selected' : '' }}>Fundação</option>
+                                <option value="Acabamento" {{ old('aplicacao') == 'Acabamento' ? 'selected' : '' }}>Acabamento</option>
+                                <option value="Estrutura" {{ old('aplicacao') == 'Estrutura' ? 'selected' : '' }}>Estrutura</option>
+                            </select>
                         </div>
 
                         <div class="flex gap-2">

@@ -40,6 +40,7 @@
                                                 <div class="text-xs uppercase tracking-[0.2em] text-blue-600 font-semibold">Material de Construção</div>
                                                 <h2 class="mt-2 text-2xl font-semibold text-gray-900">#{{ $material->id }} - {{ $material->name }}</h2>
                                                 <p class="mt-2 text-sm text-gray-500">Categoria: {{ $material->categoria->nome ?? 'Sem categoria' }}</p>
+                                                <p class="mt-1 text-sm text-gray-500">Aplicação: {{ $material->categoria->aplicacao ?? 'Sem aplicação' }}</p>
                                                 @if( ($material->estoque_minimo ?? 0) > 0 && ($material->quantidade_estoque ?? 0) < ($material->estoque_minimo ?? 0) )
                                                     <div class="mt-2 flex items-center gap-3" role="status" aria-live="polite">
                                                         <span class="relative inline-flex h-3 w-3">
