@@ -22,7 +22,7 @@ Loja do Zeca é uma aplicação web construída em Laravel 12 que oferece:
 
 As categorias permitem agrupar os materiais por tipo de utilização. No sistema, você pode:
 
-- Criar categorias como "Pintura", "Hidráulica", "Elétrica" ou "Acabamento".
+- Criar a aplicação das categorias, sendo elas: Fundação, Acabamento, Estrutura.
 - Associar cada material a uma categoria ao cadastrar ou editar o produto.
 - Visualizar a categoria do material diretamente na lista de cards.
 
