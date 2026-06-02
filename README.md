@@ -1,23 +1,23 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 # Loja do Zeca
 
-Projeto Laravel 12 para gerenciamento de materiais de constru��o, com cadastro de categorias, cadastro de materiais, upload de imagens e controle visual de estoque.
+Projeto Laravel 12 para gerenciamento de materiais de construção, com cadastro de categorias, cadastro de materiais, upload de imagens e controle visual de estoque.
 
 > Projeto desenvolvido por Henry Domingues.
 
-## Descri��o
+## Descrição
 
-Loja do Zeca � uma aplica��o web constru�da em Laravel 12 que oferece:
+Loja do Zeca é uma aplicação web construída em Laravel 12 que oferece:
 
 - CRUD completo para categorias e materiais
 - Upload de imagem para cada material
-- Detec��o de imagens muito grandes com aviso no formul�rio
-- Aviso visual em vermelho quando o estoque est� abaixo do m�nimo
-- Aviso visual em amarelo quando o estoque est� exatamente no m�nimo
-- Exibi��o de materiais em cards com todos os campos importantes
-- Exibi��o de "N�o se aplica" quando a validade estiver em branco
+- Detecção de imagens muito grandes com aviso no formulário
+- Aviso visual em vermelho quando o estoque está abaixo do mínimo
+- Aviso visual em amarelo quando o estoque está exatamente no mínimo
+- Exibição de materiais em cards com todos os campos importantes
+- Exibição de "Não se aplica" quando a validade estiver em branco
 
-## Vers�es utilizadas
+## Versões utilizadas
 
 ### Backend
 - PHP `^8.2`
@@ -42,7 +42,7 @@ Loja do Zeca � uma aplica��o web constru�da em Laravel 12 que oferece:
 - npm
 - Servidor web local (XAMPP, Laravel Sail, Valet, etc.)
 
-## Instala��o passo a passo
+## Instalação passo a passo
 
 1. Acesse a pasta do projeto:
 
@@ -50,13 +50,13 @@ Loja do Zeca � uma aplica��o web constru�da em Laravel 12 que oferece:
 cd c:\xampp\htdocs\loja-do-zeca
 ```
 
-2. Instale as depend�ncias PHP:
+2. Instale as dependências PHP:
 
 ```bash
 composer install
 ```
 
-3. Instale as depend�ncias JavaScript:
+3. Instale as dependências JavaScript:
 
 ```bash
 npm install
@@ -68,7 +68,7 @@ npm install
 copy .env.example .env
 ```
 
-5. Gere a chave da aplica��o:
+5. Gere a chave da aplicação:
 
 ```bash
 php artisan key:generate
@@ -82,7 +82,7 @@ php artisan key:generate
 php artisan migrate
 ```
 
-8. Crie o link simb�lico para storage:
+8. Crie o link simbólico para storage:
 
 ```bash
 php artisan storage:link
@@ -100,13 +100,13 @@ php artisan serve
 npm run dev
 ```
 
-11. Abra a aplica��o em:
+11. Abra a aplicação em:
 
 ```text
 http://127.0.0.1:8000
 ```
 
-## Comandos �teis
+## Comandos úteis
 
 - Rodar testes:
 
@@ -114,7 +114,7 @@ http://127.0.0.1:8000
 php artisan test
 ```
 
-- Compilar assets para produ��o:
+- Compilar assets para produção:
 
 ```bash
 npm run build
@@ -126,11 +126,11 @@ npm run build
 php artisan view:clear
 ```
 
-## Observa��es
+## Observações
 
-- As imagens de materiais s�o armazenadas em `storage/app/public/materiais`.
-- O projeto j� cont�m l�gica para exibir avisos de estoque baixo e de estoque no m�nimo.
-- Quando o campo `data_validade` est� vazio, a interface mostra `N�o se aplica`.
+- As imagens de materiais são armazenadas em `storage/app/public/materiais`.
+- O projeto já contém lógica para exibir avisos de estoque baixo e de estoque no mínimo.
+- Quando o campo `data_validade` está vazio, a interface mostra `Não se aplica`.
 
 ## Autor
 
@@ -138,4 +138,4 @@ Henry Domingues
 
 ---
 
-Documenta��o criada para orientar a instala��o e uso do projeto Loja do Zeca, respeitando as vers�es notificadas em `composer.json` e `package.json`.
+Documentação criada para orientar a instalação e uso do projeto Loja do Zeca, respeitando as versões notificadas em `composer.json` e `package.json`.
